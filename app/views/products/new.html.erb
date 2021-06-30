@@ -1,0 +1,9 @@
+<form action="/products" method="post" accept-charset="UTF-8" >
+     <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+     <label for="product_name">Product Name:</label>
+     <input type="text" name="product[name]" id="product_name" value="example" />
+     <br>
+     <label for="price">Price in $:</label>
+     <input type="number" name="product[price]" id="price" step=".01" value=1.00 />
+     <input type="submit" name="commit" value="Create User" data-disable-with="Create User">
+</form>
